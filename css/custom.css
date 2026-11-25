@@ -1,0 +1,289 @@
+/* ---------- FoodieFanatix colour palette ---------- */
+:root {
+    --tomato: #e63946;
+    --tangerine: #ff9f1c;
+    --mango: #ffbf3c;
+    --teal: #2a9d8f;
+    --cream: #fff8ef;
+    --cocoa: #2b1d1a;
+}
+
+body {
+    background-color: var(--cream);
+    color: #4a3b36;
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+.navbar-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    color: var(--cocoa);
+}
+
+a {
+    color: var(--tomato);
+}
+
+a:hover {
+    color: var(--tangerine);
+}
+
+/* ---------- Navbar ---------- */
+.navbar.bg-dark {
+    background: linear-gradient(90deg, var(--tomato), var(--tangerine)) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--cocoa);
+    transform: translateY(-2px);
+}
+
+/* ---------- Carousel ---------- */
+.carousel-caption {
+    background: linear-gradient(90deg, rgba(230, 57, 70, 0.85), rgba(255, 159, 28, 0.75));
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.carousel-caption h1 {
+    color: #fff;
+}
+
+.carousel-indicators li {
+    background-color: var(--mango);
+}
+
+/* ---------- Image sizing (same size whatever the original photo) ---------- */
+/* Hero carousel: shows the WHOLE photo, never cropped */
+.hero-carousel .carousel-item {
+    background-color: var(--cocoa);
+}
+
+.hero-carousel .carousel-item img {
+    width: 100%;
+    height: 60vh;
+    min-height: 320px;
+    max-height: 600px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Story images: all the same 4:3 box */
+.story-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---------- Welcome banner ---------- */
+.welcome-banner {
+    padding-top: 3rem;
+}
+
+.welcome-banner h1 {
+    color: var(--tomato);
+}
+
+.welcome-banner .lead {
+    color: var(--teal);
+    font-weight: 500;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 0.6rem auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--tomato), var(--tangerine), var(--teal));
+}
+
+/* ---------- Reviews ---------- */
+.reviews-section .col-lg-4 {
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.reviews-section .img-thumbnail {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 5px solid var(--tangerine);
+    background-color: #fff;
+    box-shadow: 0 6px 16px rgba(230, 57, 70, 0.3);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.reviews-section .col-lg-4:hover .img-thumbnail {
+    transform: scale(1.08) rotate(3deg);
+    border-color: var(--tomato);
+}
+
+.reviews-section h2 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.reviews-section .text-muted {
+    color: var(--teal) !important;
+    font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn-secondary {
+    background-color: var(--tomato);
+    border-color: var(--tomato);
+    border-radius: 50px;
+    padding: 0.5rem 1.6rem;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--tangerine);
+    border-color: var(--tangerine);
+    color: var(--cocoa);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(255, 159, 28, 0.45);
+}
+
+/* ---------- Dividers ---------- */
+.section-divider {
+    margin: 3rem 0;
+    border: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, transparent, var(--tomato), var(--tangerine), var(--teal), transparent);
+    opacity: 0.8;
+}
+
+/* ---------- Featured stories ---------- */
+.story-heading {
+    color: var(--cocoa);
+}
+
+.story-heading .text-muted {
+    color: var(--teal) !important;
+}
+
+.story-img {
+    border-radius: 12px;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 22px rgba(43, 29, 26, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story-img:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 12px 28px rgba(230, 57, 70, 0.4);
+}
+
+/* ---------- Photo gallery ---------- */
+.photo-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--mango);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, filter 0.3s, border-color 0.3s;
+    filter: saturate(1.1);
+}
+
+.photo-gallery img:hover {
+    transform: translateY(-6px) scale(1.04);
+    filter: saturate(1.4) brightness(1.05);
+    border-bottom-color: var(--tomato);
+}
+
+/* ---------- About & contact ---------- */
+#about .lead {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 14px;
+    border-top: 6px solid var(--teal);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--cocoa);
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--tangerine);
+    box-shadow: 0 0 0 0.2rem rgba(255, 159, 28, 0.3);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #d9c8bd;
+    background-color: var(--cocoa);
+    max-width: none;
+    border-top: 6px solid var(--tangerine);
+}
+
+.site-footer a {
+    color: var(--mango);
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .story-heading {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero-carousel {
+        display: none;
+    }
+
+    .reviews-section {
+        margin-top: 2rem;
+    }
+}

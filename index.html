@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="FoodieFanatix - Claire's reviews of the best restaurants and food spots in cities around the world.">
+    <title>FoodieFanatix</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">FoodieFanatix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#reviews" class="nav-item nav-link">Reviews</a>
+                    <a href="#stories" class="nav-item nav-link">Stories</a>
+                    <a href="#about" class="nav-item nav-link">About Claire</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero carousel (hidden on very small screens via custom.css) -->
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/ramen.jpg" class="d-block w-100" alt="Steaming bowl of ramen" />
+                    <div class="carousel-caption">
+                        <h1>Tokyo's Best Ramen</h1>
+                        <p>Rich broth, perfect noodles and a queue that was worth every minute.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pizza.jfif" class="d-block w-100" alt="Wood-fired pizza" />
+                    <div class="carousel-caption">
+                        <h1>Naples, Wood-Fired</h1>
+                        <p>Charred crusts, creamy mozzarella and pizza the way it was meant to be.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/dessert.jfif" class="d-block w-100" alt="Plated dessert" />
+                    <div class="carousel-caption">
+                        <h1>Paris, Sweet Endings</h1>
+                        <p>Patisseries, plated desserts and the croissant that ruined all others.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Welcome banner (shown on all screens, essential on mobile where the carousel is hidden) -->
+        <div class="container welcome-banner text-center">
+            <h1 class="display-4">Eat. Travel. Repeat.</h1>
+            <p class="lead">Claire's honest reviews of the best restaurants and food spots in the world's great cities.
+            </p>
+        </div>
+
+        <!-- Latest reviews -->
+        <div class="container reviews-section" id="reviews">
+            <h2 class="section-title text-center">Latest Reviews</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/sushi.jfif" class="img-thumbnail rounded-circle" width="160" alt="Sushi platter" />
+                    <h2>Sushi Saito</h2>
+                    <p class="text-muted">Tokyo, Japan &middot; 5/5</p>
+                    <p>Silky cuts, warm rice and a chef who treats every piece like art.</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">Read review</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/tacos.jfif" class="img-thumbnail rounded-circle" width="160" alt="Street tacos" />
+                    <h2>El Rey del Taco</h2>
+                    <p class="text-muted">Mexico City, Mexico &middot; 4.5/5</p>
+                    <p>Smoky, juicy and fresh off the trompo. The salsa verde alone is worth the trip.</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">Read review</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/meat.jpg" class="img-thumbnail rounded-circle" width="160"
+                        alt="Grilled meat platter" />
+                    <h2>The Braai Room</h2>
+                    <p class="text-muted">Cape Town, South Africa &middot; 4/5</p>
+                    <p>Flame-grilled boerewors, sticky ribs and a view of Table Mountain.</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">Read review</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- Featured stories -->
+        <div class="container" id="stories">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="story-heading">Street food heroes. <span class="text-muted">Cheap, loud and
+                            unforgettable.</span></h2>
+                    <p class="lead">From night markets to roadside stalls, the best bites are often the humblest.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/street-food.jpg" class="story-img img-fluid mx-auto" alt="Street food stall" />
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <div class="row">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="story-heading">Fine dining. <span class="text-muted">Worth the splurge?</span></h2>
+                    <p class="lead">Tasting menus, wine pairings and the dishes that justified the bill.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="img/fine-dining.jpg" class="story-img img-fluid mx-auto" alt="Fine dining dish" />
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="story-heading">Cafes &amp; brunch. <span class="text-muted">Coffee first,
+                            questions later.</span></h2>
+                    <p class="lead">The best flat whites, pancake stacks and sunny corners around the globe.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/coffee.jpg" class="story-img img-fluid mx-auto" alt="Brunch table" />
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- Photo gallery -->
+        <div class="container photo-gallery" id="cameraRoll">
+            <h2 class="section-title text-center">From Claire's Camera Roll</h2>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/burger.jfif" class="img-fluid" alt="Food photo 1" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/pasta.jfif" class="img-fluid" alt="Food photo 2" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/seafood.jfif" class="img-fluid" alt="Food photo 3" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/soup.jfif" class="img-fluid" alt="Food photo 4" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/nachos.jfif" class="img-fluid" alt="Food photo 5" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/salad.jfif" class="img-fluid" alt="Food photo 6" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/bread.jpg" class="img-fluid" alt="Food photo 7" />
+                </div>
+                <div class="col-6 col-md-4 col-lg-3"><img src="img/cakes.jfif" class="img-fluid" alt="Food photo 8" />
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- About & contact -->
+        <div class="container text-center" id="about">
+            <h2 class="section-title">About Claire</h2>
+            <p class="lead">Claire travels the world one plate at a time, reviewing the best restaurants and food
+                outlets in every major city. Follow along for honest reviews and plenty of food photos.</p>
+        </div>
+
+        <hr class="section-divider" />
+
+        <div class="container" id="contact">
+            <h2 class="section-title text-center">Get in Touch</h2>
+            <form class="contact-form mx-auto">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="Recommend a restaurant!"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-block">Send message</button>
+            </form>
+        </div>
+
+        <hr class="section-divider" />
+
+        <footer class="container site-footer">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2020-2026 FoodieFanatix &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
